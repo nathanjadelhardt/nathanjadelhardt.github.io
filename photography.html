@@ -25,7 +25,7 @@
             text-decoration: none;
             display: inline-block;
             text-align: center;
-            font-size: 3vh;
+            font-size: min(3vh, 1.5vw);
             padding: 1.5vh;
         }
         .lnk:hover{
@@ -102,6 +102,46 @@
             text-align: right;
             font-size: 5vw;
         }
+        .content{
+            vertical-align: top;
+            padding-left: 13vw;
+            padding-top: 7.1vw;
+            width: 85vw;
+        }
+        .titlecard{
+            font-family: 'broadway', monospace;
+            color: white;
+            text-align: left;
+            font-size: 2vw;
+            padding: 3.1vw;
+            margin-top: 9.5vw;
+        }
+        .content div div{
+            display: inline-block;
+        }
+        .content div img{
+            width: 35vw;
+            margin-top: 3.5vw;
+            margin-bottom: 1.75vw;
+            margin-left: 3.1vw;
+        }
+        .content h2{
+            pointer-events: none;
+            width: 35vw;
+            height: 25vw;
+            padding-top: 3.5vw;
+            padding-bottom: 1.75vw;
+            padding-left: 3.1vw;
+            position: absolute;
+            text-align: center;
+            line-height: 25vw;
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+            font-size: 2.5vw;
+        }
+        .content div img:hover{
+            opacity: .25;
+        }
     </style>
 </head>
 
@@ -122,6 +162,21 @@
         <div class="title">
             <h1>Photogarphy</h1>
             <h2>Projects</h1>
+        </div>
+    </div>
+    <div class="content">
+        <div class="titlecard">
+            <h1>Galleries</h1>
+        </div>
+        <div>
+            <div>
+                <h2>Street Color</h2>
+                <a href="StreetColor.html"><img src="images/COLORthumbnail.JPG"></a>
+            </div>
+            <div>
+                <h2>Street B&W</h2>
+                <a href="StreetBW.html"><img src="images/BWthumbnail.JPG"></a>
+            </div>
         </div>
     </div>
 </body>
