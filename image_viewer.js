@@ -3,6 +3,11 @@ function enlarge(input) {
     expandImg.src = input.src;
     document.getElementById("expandedImg").style.display = "block";
     document.getElementById("expandedImg").style.pointerEvents = "all";
+    document.getElementById("blackBox").style.opacity = "70%";
+    document.getElementById("blackBox").style.display = "block";
+    document.getElementById("blackBox").style.zIndex = "10";
+    document.getElementById("expandedImg").style.position = "relative";
+    document.getElementById("expandedImg").style.zIndex = "100";
     if ((window.innerWidth * 0.9 * input.height / input.width) > (window.innerHeight * .9)){
         document.getElementById("expandedImg").style.height = "90vh";
         document.getElementById("expandedImg").style.width = "auto";
@@ -21,4 +26,6 @@ function enlarge(input) {
 function hide() {
     document.getElementById("expandedImg").style.display = "none";
     document.getElementById("expandedImg").style.pointerEvents = "none";
+    document.getElementById("blackBox").style.display = "none";
+    document.getElementById("blackBox").style.opacity = "0";
 }

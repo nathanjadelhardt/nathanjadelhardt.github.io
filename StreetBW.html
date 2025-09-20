@@ -79,6 +79,7 @@
         body{
             padding: 0%;
             margin: 0%;
+            background-color: black;
             background-image: url("images/background1.png"), url("images/background2.png");
             background-repeat: no-repeat, repeat;
             background-size: 100vw;
@@ -121,7 +122,9 @@
             margin-top: 21vw;
         }
         .content img{
+            display: block;
             width: 38vw;
+            margin-top: 3vh;
         }
         .content img:hover{
             cursor: pointer;
@@ -133,8 +136,21 @@
             top: 0;
         }
         .expandedImg{
+            position: fixed;
             display: none;
             pointer-events: none;
+        }
+        .expandedImgContainer div{
+            height: 100vh;
+            width: 100vw;
+            background-color: black;
+            opacity: 0;
+            pointer-events: none;
+            display: none;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
         }
     </style>
 </head>
@@ -163,15 +179,30 @@
         <div class="column1">
             <div>
                 <img src="images/galleries/BW_Gallery/Reflection_Man.jpg" onclick="enlarge(this)">
+                <img src="images/galleries/BW_Gallery/stairset_Crossing.jpg" onclick="enlarge(this)">
+                <img src="images/galleries/BW_Gallery/Empty_Reflection.jpg" onclick="enlarge(this)">
+                <img src="images/galleries/BW_Gallery/Waiting_Alone.jpg" onclick="enlarge(this)">
+                <img src="images/galleries/BW_Gallery/Low_Road.jpg" onclick="enlarge(this)">
+                <img src="images/galleries/BW_Gallery/Walking_Alone.jpg" onclick="enlarge(this)">
+                <img src="images/galleries/BW_Gallery/Mason.jpg" onclick="enlarge(this)">
             </div>
         </div>
         <div class="column2">
             <div>
                 <img src="images/galleries/BW_Gallery/Harsh_Shadows.jpg" onclick="enlarge(this)">
+                <img src="images/galleries/BW_Gallery/stairset_sky.jpg" onclick="enlarge(this)">
+                <img src="images/galleries/BW_Gallery/Stairset_Wind.jpg" onclick="enlarge(this)">
+                <img src="images/galleries/BW_Gallery/Hallway_Reflection.jpg" onclick="enlarge(this)">
+                <img src="images/galleries/BW_Gallery/Waiting_Crowd.jpg" onclick="enlarge(this)">
+                <img src="images/galleries/BW_Gallery/Waiting_Full.jpg" onclick="enlarge(this)">
+                <img src="images/galleries/BW_Gallery/Field_House.jpg" onclick="enlarge(this)">
+                <img src="images/galleries/BW_Gallery/Safty_Corridor.jpg" onclick="enlarge(this)">
             </div>
         </div>
     </div>
     <div class="expandedImgContainer">
+        <div id="blackBox">
+        </div>
         <img id="expandedImg" onclick="hide()">
     </div>
 </body>
