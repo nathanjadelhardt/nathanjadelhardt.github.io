@@ -111,18 +111,56 @@
         }
         .column1{
             display: inline-block;
-            padding: 3.1vw;
-            margin-top: 9.5vw;
+            padding-top: 3.1vw;
+            padding-left: 3.1vw;
+            margin-top: 2.5vw;
         }
         .column2{
             float: right;
-            padding: 3.1vw;
-            margin-top: 9.5vw;
+            padding-top: 3.1vw;
+            padding-right: 3.1vw;
+            margin-top: 21vw;
         }
+        .content img{
+            display: block;
+            width: 38vw;
+            margin-top: 3vh;
+        }
+        .content img:hover{
+            cursor: pointer;
+        }
+        .expandedImgContainer{
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+        }
+        .expandedImg{
+            display: none;
+            pointer-events: none;
+        }
+        .expandedImgContainer div{
+            height: 100vh;
+            width: 100vw;
+            background-color: black;
+            opacity: 0;
+            pointer-events: none;
+            display: none;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+        }
+        .foot{
+            height:5vh
+        }
+    </style>
+</head>
     </style>
 </head>
 
 <body>
+    <script src="image_viewer.js"></script>
     <nav class="navbar">
         <ul>
             <a href="index.html"><img src="images/Logo_White.png"></a>
@@ -144,14 +182,51 @@
     <div class="content">
         <div class="column1">
             <div>
-
+                <img src="images/galleries/Color_Gallery/Light_Fall.jpg" onclick="enlarge(this)">
+                <img src="images/galleries/Color_Gallery/Mannequin_Window.jpg" onclick="enlarge(this)">
+                <img src="images/galleries/Color_Gallery/City_Watcher.jpg" onclick="enlarge(this)">
+                <img src="images/galleries/Color_Gallery/City_Watched.jpg" onclick="enlarge(this)">
+                <img src="images/galleries/Color_Gallery/Green_Fog.jpg" onclick="enlarge(this)">
+                <img src="images/galleries/Color_Gallery/Building_Face.jpg" onclick="enlarge(this)">
+                <img src="images/galleries/Color_Gallery/Last_Car.jpg" onclick="enlarge(this)">
+                <img src="images/galleries/Color_Gallery/Sunset_Kids.jpg" onclick="enlarge(this)">
+                <img src="images/galleries/Color_Gallery/Afternoon_Street.jpg" onclick="enlarge(this)">
+                <img src="images/galleries/Color_Gallery/97.jpg" onclick="enlarge(this)">
+                <img src="images/galleries/Color_Gallery/Chicago_Tribune.jpg" onclick="enlarge(this)">
+                <img src="images/galleries/Color_Gallery/Billy_Goat.jpg" onclick="enlarge(this)">
+                <img src="images/galleries/Color_Gallery/Under_Road.jpg" onclick="enlarge(this)">
+                <img src="images/galleries/Color_Gallery/Don't_Suck.jpg" onclick="enlarge(this)">
+                <img src="images/galleries/Color_Gallery/Lonely_Road.jpg" onclick="enlarge(this)">
+            </div>
+            <div class="foot">
             </div>
         </div>
         <div class="column2">
             <div>
-
+                <img src="images/galleries/Color_Gallery/Road_Crossing.jpg" onclick="enlarge(this)">
+                <img src="images/galleries/Color_Gallery/Back_Alley.jpg" onclick="enlarge(this)">
+                <img src="images/galleries/Color_Gallery/City_Spyer.jpg" onclick="enlarge(this)">
+                <img src="images/galleries/Color_Gallery/Stair_Graffiti.jpg" onclick="enlarge(this)">
+                <img src="images/galleries/Color_Gallery/Floor_Working.jpg" onclick="enlarge(this)">
+                <img src="images/galleries/Color_Gallery/Caboose.jpg" onclick="enlarge(this)">
+                <img src="images/galleries/Color_Gallery/Peek.jpg" onclick="enlarge(this)">
+                <img src="images/galleries/Color_Gallery/Lonely_Chair.jpg" onclick="enlarge(this)">
+                <img src="images/galleries/Color_Gallery/Haze_Hallway.jpg" onclick="enlarge(this)">
+                <img src="images/galleries/Color_Gallery/Broken_Light.jpg" onclick="enlarge(this)">
+                <img src="images/galleries/Color_Gallery/America.jpg" onclick="enlarge(this)">
+                <img src="images/galleries/Color_Gallery/CTA.jpg" onclick="enlarge(this)">
+                <img src="images/galleries/Color_Gallery/Hustle.jpg" onclick="enlarge(this)">
+                <img src="images/galleries/Color_Gallery/Mortons.jpg" onclick="enlarge(this)">
+                <img src="images/galleries/Color_Gallery/Free_Riding.jpg" onclick="enlarge(this)">
+            </div>
+            <div class="foot">
             </div>
         </div>
+    </div>
+    <div class="expandedImgContainer">
+        <div id="blackBox">
+        </div>
+        <img id="expandedImg" onclick="hide()">
     </div>
 </body>
 
