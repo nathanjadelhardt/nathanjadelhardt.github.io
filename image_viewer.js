@@ -21,6 +21,7 @@ function enlarge(input) {
     }
     document.getElementById("expandedImg").style.marginLeft = "auto";
     document.getElementById("expandedImg").style.marginRight = "auto";
+    document.getElementsByClassName("expandedImgContainer").item(0).style.height = "100vh";
 }
 
 function hide() {
@@ -28,4 +29,5 @@ function hide() {
     document.getElementById("expandedImg").style.pointerEvents = "none";
     document.getElementById("blackBox").style.display = "none";
     document.getElementById("blackBox").style.opacity = "0";
+    document.getElementsByClassName("expandedImgContainer").item(0).style.height = "0";
 }
