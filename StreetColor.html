@@ -25,7 +25,7 @@
             text-decoration: none;
             display: inline-block;
             text-align: center;
-            font-size: min(3vh, 1.5vw);
+            font-size: 3vh;
             padding: 1.5vh;
         }
         .lnk:hover{
@@ -38,7 +38,7 @@
             float: right;
         }
         .navbar img{
-            padding-left: 1.15vw;
+            padding-left: 2.25vh;
             margin: 0;
             width: 22vh;
             display: inline-block;
@@ -49,8 +49,8 @@
             display: inline-block;
             vertical-align: top;
             height: 22vh;
-            width: fit-content;
-            font-size: clamp(0%, max(5vh, 5vw), min(5vh, .03 * (100vw - 18.3vw)));
+            overflow:hidden;
+            font-size: clamp(0%, max(5vh, 5vw), min(5vh, (4vw - 3vh)));
         }
         .navbar h1{
             padding: 0;
@@ -58,11 +58,13 @@
             font-family: 'Broadway', Courier, monospace;
             color: white;
             text-decoration: none;
-            padding-top: 2%;
-            padding-left: 3vw;
+            margin-top: clamp(0%, (7vh - 4vw), 100%);
+            padding-top: 2vh;
+            padding-left: 5vh;
             display: block;
             text-align: left;
             font-size: 150%;
+            overflow:hidden;
         }
         .navbar h2{
             padding: 0;
@@ -70,11 +72,12 @@
             font-family: 'Courier New', Courier, monospace;
             color: white;
             text-decoration: none;
-            padding-top: 2%;
-            padding-left: 3vw;
+            padding-top: 2vh;
+            padding-left: 5vh;
             display: block;
             text-align: left;
             font-size: 126.75%;
+            overflow:hidden;
         }
         .body_image{
             width: 100vw;
