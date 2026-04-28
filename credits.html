@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NathanJ.Adelhardt</title>
+    <meta name="description" content="">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .navbar ul{
+            list-style-type: none;
+            background-color: rgb(0, 0, 0);
+            padding:0;
+            margin:0;
+            overflow: hidden;
+            height: 22vh;
+        }
+        .lnk{
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            font-size: 2.5vh;
+            padding: 1.5vh;
+        }
+        .lnk:hover{
+            text-decoration: underline;
+        }
+        .navbar li{
+            padding: .5vh;
+            padding-top: 13.5vh;
+            padding-right: 1vh;
+            float: right;
+        }
+        .navbar img{
+            padding-left: 2.25vh;
+            margin: 0;
+            width: 22vh;
+            display: inline-block;
+        }
+        .navbar ul div{
+            padding: 0;
+            margin: 0;
+            display: inline-block;
+            vertical-align: top;
+            height: 22vh;
+            overflow:hidden;
+            font-size: clamp(0%, max(5vh, 5vw), min(5vh, (4vw - 3vh)));
+        }
+        .navbar h1{
+            padding: 0;
+            margin: 0;
+            font-family: 'Broadway', Courier, monospace;
+            color: white;
+            text-decoration: none;
+            margin-top: clamp(0%, (7vh - 4vw), 100%);
+            padding-top: 2vh;
+            padding-left: 5vh;
+            display: block;
+            text-align: left;
+            font-size: 150%;
+            overflow:hidden;
+        }
+        .navbar h2{
+            padding: 0;
+            margin: 0;
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+            text-decoration: none;
+            padding-top: 2vh;
+            padding-left: 5vh;
+            display: block;
+            text-align: left;
+            font-size: 126.75%;
+            overflow:hidden;
+        }
+        .body_image{
+            width: 100vw;
+        }
+        body{
+            padding: 0%;
+            margin: 0%;
+            background-color: black;
+            background-image: url("images/background1.png"), url("images/background2.png");
+            background-repeat: no-repeat, repeat;
+            background-size: 100vw;
+            background-position: 0 22vh;
+        }
+        .title h1{
+            padding-top: 4%;
+            padding-right: 27.15vw;
+            margin: 0;
+            font-family: 'broadway', monospace;
+            color: white;
+            text-align: right;
+            font-size: 5vw;
+        }
+        .title h2{
+            padding-top: 1%;
+            padding-right: 6vw;
+            margin: 0;
+            font-family: 'broadway', monospace;
+            color: white;
+            text-align: right;
+            font-size: 5vw;
+        }
+        .content{
+            vertical-align: top;
+            padding-left: 13vw;
+            padding-top: 7.1vw;
+            width: 85vw;
+        }
+        .content div{
+            font-family: 'broadway', monospace;
+            color: white;
+            text-align: left;
+            font-size: 2vw;
+            padding: 3.1vw;
+            margin-top: 0vw;
+        }
+        .content h1{
+            margin-top: 3vw;
+        }
+        .foot{
+            height:5vh
+        }
+
+
+
+        ul.submenu li {
+            line-height: 2.5vw;
+            font-size: 1.75vw;
+            font-family:'Courier New', Courier, monospace;
+        }
+        li.dish {
+            display: flex;
+            justify-content: space-between;
+        }
+        li.dish > div {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex: 1;
+        }
+        li.dish span.short::after {
+            content: " ";
+            flex: 1;
+            border-bottom: 3px dotted #ffffff;
+        }
+        span.short {
+            padding-top: 2vw;
+            line-height: 2.5vw;
+            font-size: 1.75vw;
+            font-family:'Courier New', Courier, monospace;
+            flex: 1;
+            display: flex;
+        }
+        span.price {
+            padding-top: 2vw;
+            padding-right: 12vw;
+            line-height: 2.5vw;
+            font-size: 1.75vw;
+            font-family:'Courier New', Courier, monospace;
+        }
+
+        .creds{
+            padding-top: 5vw;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <a href="index.html"><img src="images/Logo_White.png"></a>
+            <li><a class="lnk" href="about.html">About</a></li>
+            <li><a class="lnk" href="credits.html" style="text-decoration: underline;">Credits</a></li>
+            <li><a class="lnk" href="photography.html">Photogarphy</a></li>
+            <li><a class="lnk" href="video.html">Video</a></li>
+            <div>
+                <h1>Nathan James Adelhardt</h1>
+                <h2>Cinematography & Photography</h2>
+            </div>
+        </ul>
+    </nav>
+    <div>
+        <div class="title">
+            <h1>Project</h1>
+            <h2>Credits</h2>
+        </div>
+    </div>
+    <div class="content">
+
+
+
+
+        <div>
+            <h1>Student Projects</h1>
+            <ul class="creds">
+                <li class=dish>
+                    <div> <span class=short>You (music video)</span></div>
+                    <span class=price>Camera Operator</span>
+                </li>
+                <li class=dish>
+                    <div> <span class=short>Digital Blackface</span></div>
+                    <span class=price>Boom Operator</span>
+                </li>
+                <li class=dish>
+                    <div> <span class=short>Pickings and Pairings</span></div>
+                    <span class=price>Producer</span>
+                </li>
+                <li class=dish>
+                    <div> <span class=short>The Honeysuckle Market</span></div>
+                    <span class=price>Editor</span>
+                </li>
+                <li class=dish>
+                    <div> <span class=short>Go Rest Young Man</span></div>
+                    <span class=price>PA, Aditional Boom</span>
+                </li>
+                <li class=dish>
+                    <div> <span class=short>First Flight Out</span></div>
+                    <span class=price>Director</span>
+                </li>
+                <li class=dish>
+                    <div> <span class=short>In The Middle</span></div>
+                    <span class=price>Boom Operator</span>
+                </li>
+                <li class=dish>
+                    <div> <span class=short>Let a Cold One Rip</span></div>
+                    <span class=price>Director of Photography</span>
+                </li>
+                <li class=dish>
+                    <div> <span class=short>Paint Commercial</span></div>
+                    <span class=price>Camera Operator</span>
+                </li>
+                <li class=dish>
+                    <div> <span class=short>Think of You (music video)</span></div>
+                    <span class=price>Director of Photography</span>
+                </li>
+                <li class=dish>
+                    <div> <span class=short>Twisted Obsession</span></div>
+                    <span class=price>Grip</span>
+                </li>
+                <li class=dish>
+                    <div> <span class=short>Killer be Killed</span></div>
+                    <span class=price>PA</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="foot">
+    </div>
+</body>
+
+</html>
